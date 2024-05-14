@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open controlpanel.html",
-            "file": "C:\\Github\\ERAVOL\\home.html"
+            "file": "C:\\Github\\EravolComplete\\home.html"
         }
     ]
 }
