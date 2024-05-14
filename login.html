@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="loginForm">
+        <h1>Login</h1>
+        <div class="warning-box" id="warningBox">Incorrect access code. Please try again.</div>
+        <div class="input-box">
+          <input type="password" id="accessCode" placeholder="Access Code" required />
+          <i class="bx bxs-key"></i>
+        </div>
+        <button type="button" class="btn" onclick="login()">Login</button>
+        <button type="button" class="btn" onclick="home()">Cancel</button>
+      </form>
+    </div>
+
+    <script>
+    function login() {
+      var accessCode = document.getElementById('accessCode').value;
+
+      if (accessCode === 'eravol') {
+        window.location.href = './controlpanel.html';
+      } else {
+        document.getElementById('warningBox').style.display = 'block';
+        document.getElementById('accessCode').value = '';
+        document.getElementById('accessCode').focus();
+      }
+    }
+
+    function home() {
+      window.location.href = './home.html';
+    }
+    </script>
+  </body>
+</html>

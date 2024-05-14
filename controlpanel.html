@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>ERAVOL</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <h1>ERAVOL</h1>
+            </a>
+        </div>
+        <button class="btn"  onclick=doSomething2()>Logout</button>
+
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>After submitting a temperature, the house will start warming up.</h4>
+            <h1>Type in <span>Temperature</span></h1>
+            <div class="input-box">
+                <input type="number" placeholder="Temperature" required>
+                <span><i class="ri-celsius-fill"></i></span>
+            </div>
+            <button id="btn" class="btn">Submit</button>
+    </header>
+
+    <div class="copyright">
+        <footer>Copyright © 2024 ERAVOL. All Rights Reserved.</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+        function doSomething2() {
+          // Change the page to a new URL
+          window.location.href = "./home.html";
+        }
+</script>
+	</body>
+</html>
