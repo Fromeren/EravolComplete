@@ -8,3 +8,8 @@ function scrollToElement(elementSelector, instance = 0){
     }
 }
 
+function runPythonScript() {
+    // Get the path to the Python script.
+    var pythonScriptPath = "C:\\Github\\EravolComplete\\app.py"
+    subprocess.run([write_read(x), pythonScriptPath]);
+}
